@@ -15,6 +15,7 @@ def cli():
 @click.option("--author", required=True, help="Author of the book.")
 @click.option("--year", type=int, default=None, help="Publication year (optional).")
 def add(title: str, author: str, year: int):
+    print(f"Adding book with title {title}, author {author}")
     """Add a new book to the catalog."""
     # TODO:
     # 1. Load the current list of books with load_books().
